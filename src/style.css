@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #9A2B14;
+    --primary-hover: #7E210D;
+    --primary-dark: #5A1507;
+    --primary-light: #B83A1E;
+    --deep-brown: #2A140B;
+    --cream: #FAF6F0;
+    --light-beige: #EADCCE;
+    --muted-green: #9A2B14;
+    --gold: #C87A1E;
+    --gold-light: #E29433;
+    --gold-dark: #9E580B;
+    --dark-text: #22120B;
+    --muted-text: #6E5648;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FAF6F0;
+    color: #24140D;
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif, .font-tenor {
+    font-family: 'Tenor Sans', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  .font-nunito {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-jost {
+    font-family: 'Jost', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom subtle heritage accents */
+.bg-cream-radial {
+  background-color: #FAF6F0;
+}
+
+.gold-border-glow {
+  border: 1px solid #C87A1E;
+}
+
+.gujarati-pattern-bg {
+  background-color: #FAF6F0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #EADECF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3A2116;
+}
