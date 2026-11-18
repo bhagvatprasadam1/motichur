@@ -42,10 +42,10 @@ export const About: React.FC = () => {
         {/* Master Our Story Hero Banner */}
         <div className="mb-8 sm:mb-10 lg:mb-12 rounded-2xl sm:rounded-3xl overflow-hidden border border-light-beige bg-cream-card">
           <img
-            src="/motichur-laddu/our-story-banner.png"
+            src="/motichur-laddu/our-story-banner.webp"
             alt="Our Story Banner - Bhagvat Prasadam Traditional Motichur Laddu Heritage Inspired by Nilkanthdham Poicha Gujarat"
-            width="1200"
-            height="480"
+            width="1024"
+            height="409"
             className="w-full h-auto block select-none transition-transform duration-700 hover:scale-[1.01]"
             loading="eager"
             fetchPriority="high"
@@ -55,9 +55,7 @@ export const About: React.FC = () => {
         {/* Hero Section */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12">
           <span className="font-jost text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-primary flex items-center justify-center gap-2 mb-3">
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
             DEVOTIONAL CRAFTSMANSHIP & SACRED PURITY
-            <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
           </span>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-deep-brown font-normal tracking-tight leading-tight">
             Preserving Sacred Purity & Authentic Sweet Tradition
@@ -92,8 +90,8 @@ export const About: React.FC = () => {
                   alt="Ancestral Gujarati Motichur Laddu Craftsmanship in Pure Premium Ghee by Bhagvat Prasadam"
                   className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
                   loading="lazy"
-                  width="600"
-                  height="450"
+                  width="2160"
+                  height="2160"
                 />
               </div>
             </div>
@@ -157,16 +155,20 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-8 sm:mb-10 lg:mb-12">
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-gold/40 bg-white">
             <img
-              src="/motichur-laddu/motichur-laddu-gift-box.jpg"
+              src="/motichur-laddu/motichur-laddu-gift-box.webp"
               alt="Luxury Festive Motichur Laddu Keepsake Gift Box in Pure Premium Ghee with Brass Diyas by Bhagvat Prasadam"
+              width="1200"
+              height="896"
               className="w-full h-44 sm:h-72 lg:h-80 object-cover transform hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
           </div>
           <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-gold/40 bg-white">
             <img
-              src="/motichur-laddu/motichur-laddu-macro-texture.jpg"
+              src="/motichur-laddu/motichur-laddu-macro-texture.webp"
               alt="Juicy Melt-in-Mouth Microscopic Boondi Pearl Texture of Pure Premium Ghee Motichur Laddu"
+              width="1200"
+              height="896"
               className="w-full h-44 sm:h-72 lg:h-80 object-cover transform hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />

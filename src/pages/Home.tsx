@@ -2,6 +2,7 @@ import React from "react";
 import { SEOHead } from "../components/seo/SEOHead";
 import { seoData } from "../data/seo";
 import {
+  getWebsiteSchema,
   getOrganizationSchema,
   getProductSchema,
   getFAQPageSchema,
@@ -23,6 +24,7 @@ import { FinalCTA } from "../components/home/FinalCTA";
 
 export const Home: React.FC = () => {
   const schemas = [
+    getWebsiteSchema(),
     getOrganizationSchema(),
     getProductSchema(),
     getFAQPageSchema(),

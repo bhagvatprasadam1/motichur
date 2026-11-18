@@ -12,12 +12,12 @@ export const TextureSensory: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden border border-gold/40 bg-white">
               <img
-                src="/motichur-laddu/motichur-laddu-macro-texture.jpg"
+                src="/motichur-laddu/motichur-laddu-macro-texture.webp"
                 alt="Macro Texture of Melt-in-the-Mouth Motichur Laddu with Microscopic Boondi Pearls, Melon Seeds, and Pure Premium Ghee"
                 className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-700"
                 loading="lazy"
-                width="600"
-                height="450"
+                width="1200"
+                height="896"
               />
             </div>
             <div className="absolute -bottom-3 -right-3 bg-primary text-white p-3.5 rounded-2xl border border-gold/40 hidden sm:block max-w-[220px]">
@@ -32,7 +32,6 @@ export const TextureSensory: React.FC = () => {
           {/* Right: Dramatic Sensory Copy */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-5">
             <span className="font-jost text-primary font-bold text-xs uppercase tracking-[0.22em] flex items-center gap-2">
-              <span className="inline-block w-4 h-0.5 bg-gold/70"></span>
               THE SENSORY DISTINCTION
             </span>
 

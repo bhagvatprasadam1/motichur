@@ -22,8 +22,8 @@ export const ProductIntro: React.FC = () => {
                 alt="Authentic Motichur Laddu Close-Up showing Microscopic Golden Boondi Pearls in Pure Premium Ghee and Saffron Syrup"
                 className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
                 loading="lazy"
-                width="600"
-                height="450"
+                width="2160"
+                height="2160"
               />
             </div>
             {/* Cultural caption */}

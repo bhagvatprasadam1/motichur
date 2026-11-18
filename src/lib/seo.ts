@@ -2,6 +2,24 @@ import { siteConfig } from '../data/siteConfig';
 import { motichurLadduProduct } from '../data/products';
 import { faqsData } from '../data/faqs';
 
+export function getWebsiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Motichur Laddu - Bhagvat Prasadam',
+    alternateName: ['Motichur Laddu', 'Bhagvat Prasadam Motichur Laddu', 'मोतीचूर लड्डू'],
+    url: siteConfig.siteUrl,
+    description: siteConfig.subTagline,
+    inLanguage: 'en-IN',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Bhagvat Prasadam',
+      url: siteConfig.siteUrl,
+      logo: `${siteConfig.siteUrl}/images/logo.webp`,
+    },
+  };
+}
+
 export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',

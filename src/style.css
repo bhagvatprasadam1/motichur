@@ -21,6 +21,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 130px;
     -webkit-tap-highlight-color: transparent;
   }
 

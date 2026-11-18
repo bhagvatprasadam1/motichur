@@ -35,15 +35,15 @@ export const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${
+        className={`w-full transition-all duration-300 ${
           isScrolled
-            ? 'bg-cream/95 backdrop-blur-md py-1.5 sm:py-2 border-b border-light-beige'
-            : 'bg-cream py-2 sm:py-2.5 lg:py-3 border-b border-light-beige/60'
+            ? 'bg-cream/95 backdrop-blur-md py-1 sm:py-1.5 shadow-sm'
+            : 'bg-cream py-1.5 sm:py-2'
         }`}
       >
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between min-h-[72px] sm:min-h-[80px] lg:min-h-[90px] xl:min-h-[98px]">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative flex items-center justify-between min-h-[64px] sm:min-h-[70px] lg:min-h-[72px]">
           
-          {/* Left: Brand Logo */}
+          {/* Left: Brand Logo (~50px height) */}
           <div className="flex items-center">
             <Link
               to="/"
@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
                 alt="Bhagvat Prasadam Motichur Laddu - Authentic Gujarati Pure Premium Ghee Sweets"
                 width="1024"
                 height="512"
-                className="w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 2xl:w-80 h-auto max-h-16 sm:max-h-20 lg:max-h-24 xl:max-h-26 object-contain transition-transform duration-300 group-hover:scale-105"
+                className="w-36 sm:w-44 md:w-48 lg:w-52 h-auto max-h-[46px] sm:max-h-[50px] lg:max-h-[52px] object-contain transition-transform duration-300 group-hover:scale-105"
                 loading="eager"
               />
             </Link>

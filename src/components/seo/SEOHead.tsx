@@ -44,6 +44,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     if (keywords) {
       setMeta('keywords', keywords);
     }
+    setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
 
     const fullCanonicalUrl = `${siteConfig.siteUrl}${canonicalPath === '/' ? '' : canonicalPath}`;
     const fullOgImageUrl = ogImage.startsWith('http')
@@ -66,12 +67,15 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     setMeta('og:image', fullOgImageUrl, true);
     setMeta('og:type', 'website', true);
     setMeta('og:site_name', siteConfig.brandName, true);
+    setMeta('og:locale', 'en_IN', true);
 
     // Twitter Card
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', title);
     setMeta('twitter:description', description);
     setMeta('twitter:image', fullOgImageUrl);
+    setMeta('twitter:site', '@bhagvatprasadam');
+    setMeta('twitter:creator', '@bhagvatprasadam');
 
     // Structured data injection
     if (schema) {

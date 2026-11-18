@@ -15,10 +15,10 @@ export const FullWidthBanner: React.FC = () => {
             aria-label="Explore Authentic Traditional Gujarati Motichur Laddu by Bhagvat Prasadam"
           >
             <img
-              src="/motichur-laddu/motichur-laddu-home-banner.jpg"
+              src="/motichur-laddu/motichur-laddu-home-banner.webp"
               alt="Traditional Gujarati Motichur Laddu in Pure Premium Ghee - Rich Taste, Pure Tradition, No Preservatives by Bhagvat Prasadam"
-              width="1920"
-              height="800"
+              width="1024"
+              height="576"
               className="w-full h-auto block select-none transition-transform duration-700 group-hover:scale-[1.01]"
               loading="lazy"
             />

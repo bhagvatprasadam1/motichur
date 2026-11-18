@@ -28,16 +28,13 @@ export const GiftingTeaser: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="rounded-3xl overflow-hidden border-2 border-gold/40 bg-white">
               <img
-                src="/motichur-laddu/motichur-laddu-gift-box.jpg"
+                src="/motichur-laddu/motichur-laddu-gift-box.webp"
                 alt="Royal Festive Motichur Laddu Keepsake Gift Box Handcrafted in Pure Premium Ghee for Diwali and Wedding Favors by Bhagvat Prasadam"
                 className="w-full h-auto object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-500"
                 loading="lazy"
-                width="600"
-                height="450"
+                width="1200"
+                height="896"
               />
-            </div>
-            <div className="mt-3 text-center text-xs text-muted-text italic">
-              Available in budget-friendly 250gm (₹118), 500gm (₹236), and 1kg (₹472) gift boxes
             </div>
           </div>
 

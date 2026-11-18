@@ -38,12 +38,12 @@ export const IngredientsSection: React.FC = () => {
             </div>
             <div className="lg:col-span-7 h-full">
               <img
-                src="/motichur-laddu/motichur-laddu-ingredients-flatlay.jpg"
+                src="/motichur-laddu/motichur-laddu-ingredients-flatlay.webp"
                 alt="Pure Motichur Laddu Ingredients Flat Lay - Stone-Ground Chana Besan, 100% Pure Premium Ghee, Kashmiri Kesar, Green Cardamom, and Melon Seeds"
                 className="w-full h-full object-cover max-h-[380px] lg:max-h-none"
                 loading="lazy"
-                width="700"
-                height="450"
+                width="1376"
+                height="768"
               />
             </div>
           </div>

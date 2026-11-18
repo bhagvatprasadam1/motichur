@@ -89,7 +89,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             </div>
 
             {/* Bottom Actions */}
-            <div className="pt-6 border-t border-light-beige space-y-4">
+            <div className="pt-4 space-y-4">
               <WhatsAppButton
                 context="general"
                 className="w-full justify-center text-sm py-3"

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { siteConfig } from "../../data/siteConfig";
 import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
 import { WhatsAppIcon } from "../common/WhatsAppIcon";
+import { AppStoreBadges } from "../common/AppStoreBadges";
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +13,7 @@ export const Footer: React.FC = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
-    <footer className="bg-cream text-dark-text pt-6 sm:pt-8 lg:pt-9 pb-6 border-t border-light-beige">
+    <footer className="bg-cream text-dark-text pt-6 sm:pt-8 lg:pt-9 pb-6">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Grid: Clean collapsible sections on mobile, 12-col on desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 pb-6 sm:pb-8">
@@ -33,7 +34,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links Column (Collapsible Dropdown on Mobile, Open by Default on Desktop) */}
-          <div className="col-span-2 sm:col-span-2 lg:col-span-3 border-b border-light-beige/70 pb-3 lg:border-none lg:pb-0">
+          <div className="col-span-2 sm:col-span-2 lg:col-span-3 pb-3 lg:border-none lg:pb-0">
             <button
               type="button"
               onClick={() => setIsQuickLinksOpen((prev) => !prev)}
@@ -116,7 +117,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Policies Column (Collapsible Dropdown on Mobile, Open by Default on Desktop) */}
-          <div className="col-span-2 sm:col-span-2 lg:col-span-2 border-b border-light-beige/70 pb-3 lg:border-none lg:pb-0">
+          <div className="col-span-2 sm:col-span-2 lg:col-span-2 pb-3 lg:border-none lg:pb-0">
             <button
               type="button"
               onClick={() => setIsPoliciesOpen((prev) => !prev)}
@@ -183,7 +184,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info Column (Collapsible Dropdown on Mobile, Open by Default on Desktop) */}
-          <div className="col-span-2 sm:col-span-2 lg:col-span-3 border-b border-light-beige/70 pb-3 lg:border-none lg:pb-0 pt-1 sm:pt-2 lg:pt-0">
+          <div className="col-span-2 sm:col-span-2 lg:col-span-3 pb-3 lg:border-none lg:pb-0 pt-1 sm:pt-2 lg:pt-0">
             <button
               type="button"
               onClick={() => setIsContactOpen((prev) => !prev)}
@@ -293,10 +294,10 @@ export const Footer: React.FC = () => {
       <div className="w-full overflow-hidden pt-4 pb-2">
         <div className="w-full flex items-center justify-center">
           <img
-            src="/motichur-laddu/motichur-laddu-footer-illustration.png"
+            src="/motichur-laddu/motichur-laddu-footer-illustration.webp"
             alt="Traditional Gujarati Halwai Crafting Motichur Laddu in Pure Premium Ghee - Heritage Linework Banner"
-            width="1324"
-            height="580"
+            width="1318"
+            height="574"
             className="w-full max-w-[1700px] h-auto object-contain mix-blend-multiply select-none pointer-events-none block px-1 sm:px-3 md:px-6"
             loading="lazy"
           />
@@ -304,28 +305,28 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Pan-India Express Delivery SEO Tagline */}
-        <div className="py-2.5 text-center text-[11px] sm:text-xs text-muted-text/80 border-t border-light-beige/50 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-          <span className="font-semibold text-deep-brown">Express Delivery Hubs:</span>
-          <span>Mumbai</span>
-          <span>•</span>
-          <span>Ahmedabad</span>
-          <span>•</span>
-          <span>Surat</span>
-          <span>•</span>
-          <span>Vadodara</span>
-          <span>•</span>
-          <span>Pune</span>
-          <span>•</span>
-          <span>Delhi NCR</span>
-          <span>•</span>
-          <span>Bengaluru</span>
-          <span>•</span>
-          <span>Hyderabad & 20,000+ Pin Codes Across India</span>
+        {/* Footer Mobile App Promotion - single line on cream background */}
+        <div className="pt-2 pb-2 flex items-center justify-center text-center">
+          <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-xs text-muted-text">
+            {/* Desktop message */}
+            <span className="hidden sm:inline font-medium text-deep-brown">
+              Install <strong className="font-semibold">{siteConfig.brandName}</strong> App &amp; Get{' '}
+              <span className="text-primary font-bold">2% Extra Discount</span> on App! Available on:
+            </span>
+
+            {/* Mobile message */}
+            <span className="inline sm:hidden font-medium text-deep-brown text-[11px]">
+              Install App &amp; Get{' '}
+              <span className="text-primary font-bold">2% Off</span>:
+            </span>
+
+            {/* App Store & Play Store Badges */}
+            <AppStoreBadges theme="light" size="xs" />
+          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-3 border-t border-light-beige/70 flex flex-col sm:flex-row items-center justify-center text-center text-xs text-muted-text gap-1.5 sm:gap-2">
+        <div className="pt-2 pb-2 flex flex-col sm:flex-row items-center justify-center text-center text-xs text-muted-text gap-1.5 sm:gap-2">
           <p>
             © {currentYear} {siteConfig.brandName}. All rights reserved. Crafted
             with Gujarati tradition.
